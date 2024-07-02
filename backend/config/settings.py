@@ -10,7 +10,7 @@ SECRET_KEY = "django-insecure-gi^=3xf3uhji_agc*f$gsdz2maoj$*k*&%l+89@i%bd*vh)-f0
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bs2001.pythonanywhere.com", "https://hospitalmanagementsystem-opal.vercel.app", "http://hospitalmanagementsystem-opal.vercel.app"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bs2001.pythonanywhere.com"]
 
 DJANGO_APPS = [
     "django.contrib.admin",
@@ -125,8 +125,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "http://hospitalappointment.vercel.app",
-    "https://hospitalappointment.vercel.app",
+    "https://hospitalmanagementsystem-opal.vercel.app",
+    "https://hospitalmanagementsystem-opal.vercel.app",
 ]
 
 CORS_ALLOW_HEADERS = [
