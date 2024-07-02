@@ -10,7 +10,7 @@ SECRET_KEY = "django-insecure-gi^=3xf3uhji_agc*f$gsdz2maoj$*k*&%l+89@i%bd*vh)-f0
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bs2001.pythonanywhere.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bs2001.pythonanywhere.com", "https://hospitalmanagementsystem-opal.vercel.app",]
 
 DJANGO_APPS = [
     "django.contrib.admin",
