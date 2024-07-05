@@ -127,6 +127,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://hospitalmanagementsystem-opal.vercel.app",
     "https://hospitalmanagementsystem-opal.vercel.app",
+    "https://hospitalmanagementsystem-bd.vercel.app",
+    "http://hospitalmanagementsystem-bd.vercel.app",
 ]
 
 CORS_ALLOW_HEADERS = [
