@@ -17,5 +17,7 @@ class PatientProfileView(APIView):
         patient = get_object_or_404(
             UserAccount, phone_number=tokenValidation(request)["phone_number"]
         )
+        if patient.is_doctor is True:
+            patient.first_name = "Dr. " + patient.first_name
         serializer = PatientProfileSerializer(patient)
         return Response(serializer.data, status=HTTP_200_OK)
