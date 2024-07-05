@@ -20,12 +20,13 @@ class BookDeleteView(APIView):
             book_instance = get_object_or_404(BookAppointmentModel, id=book_id)
             
             appointment_id = book_instance.appointment.id
-            book_instance.delete()
-            
-            appointment_instance = AppointmentModel.objects.get(id=appointment_id)
-            appointment_instance.availability = True
-            appointment_instance.save()
-            
-            return Response("Successful in deleting a book.")
+            if book_instance.is_complete == False:
+                book_instance.delete()
+                
+                appointment_instance = AppointmentModel.objects.get(id=appointment_id)
+                appointment_instance.availability = True
+                appointment_instance.save()
+                
+                return Response("Successful in deleting a book.")
         
         return Response("Unsuccessful in deleting a book.")
